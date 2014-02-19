@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DetalleTiendaActivity" >
+
+    <TextView
+        android:id="@+id/tVNombreTienda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tVTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tVDireccion"
+        android:layout_below="@+id/tVDireccion"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/tVNombreTienda" 
+        android:text="@string/text_call" />
+    
+    <TextView
+        android:id="@+id/tVDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tVNombreTienda"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@+id/tVNombreTienda" 
+        android:text="@string/text_direccion" />
+
+    <TextView
+        android:id="@+id/tVHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tVTelefono"
+        android:layout_toRightOf="@+id/tVNombreTienda" 
+        android:layout_marginTop="18dp"
+        android:text="@string/text_time" />
+
+    <TextView
+        android:id="@+id/tVWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tVTelefono"
+        android:layout_toRightOf="@+id/tVNombreTienda" 
+        android:layout_below="@+id/tVHorario"
+        android:layout_marginTop="18dp"
+        android:text="@string/text_site" />
+
+    <TextView
+        android:id="@+id/tVEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tVWebsite"
+        android:layout_toRightOf="@+id/tVNombreTienda" 
+        android:layout_below="@+id/tVWebsite"
+        android:layout_marginTop="18dp"
+        android:text="@string/text_email" />
+
+    <Button
+        android:id="@+id/bLlamar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tVEmail"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tVEmail"
+        android:layout_marginTop="36dp"
+        android:onClick="llamar()"
+        android:text="@string/text_call" />
+
+    <Button
+        android:id="@+id/bDetalleImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bLlamar"
+        android:layout_alignRight="@+id/bLlamar"
+        android:layout_below="@+id/bLlamar"
+        android:text="@string/text_Detail_Imagen" />
+
+    
+
+</RelativeLayout>

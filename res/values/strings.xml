@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">MALL MJ</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detalle_tienda">DetalleTiendaActivity</string>
+    <string name="list_title">Listado de tiendas</string>
+    
+    <string name="title_activity_detalle_imagen">DetalleImagenActivity</string>
+    <string name="text_call">Llamar</string>
+    <string name="text_time">Horario</string>
+    <string name="text_direccion">Direccion</string>
+    <string name="text_site">WebSite</string>
+    <string name="text_email">Email</string>
+    <string name="text_Detail_Imagen">Detalle de fotografia</string>
+    <string name="text_imagen">Ofertas Febrero</string>
+    
+
+</resources>
